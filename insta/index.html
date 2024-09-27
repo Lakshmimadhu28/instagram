@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instagram Layout with Scroll and Icons</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Instagram</a>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fas fa-user"></i> Profile</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fas fa-plus-circle"></i> Create</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="container-fluid">
+    <div class="row">
+      
+      <!-- Sidebar (Fixed) -->
+      <div class="col-md-2" id="sidebar">
+        <ul class="list-group">
+          <li class="list-group-item"><i class="fas fa-home"></i> Home</li>
+          <li class="list-group-item"><i class="fas fa-search"></i> Search</li>
+          <li class="list-group-item"><i class="fas fa-compass"></i> Explore</li>
+          <li class="list-group-item"><i class="fas fa-paper-plane"></i> Messages</li>
+          <li class="list-group-item"><i class="fas fa-heart"></i> Notifications</li>
+          <li class="list-group-item"><i class="fas fa-plus-square"></i> Create</li>
+          <li class="list-group-item"><i class="fas fa-user-circle"></i> Profile</li>
+        </ul>
+      </div>
+
+      <!-- Feed -->
+      <div class="col-md-6" id="feed">
+        <!-- Stories Section (Scrollable horizontally) -->
+        <div class="stories-section mb-4">
+          <div class="d-flex overflow-auto">
+            <!-- Multiple Stories (scrollable) -->
+            <div class="story">
+              <img src="./81.jpeg" class="rounded-circle story-img" alt="Story 1">
+              <p class="story-username">Your Story</p>
+            </div>
+            <div class="story">
+              <img src="./82.png" class="rounded-circle story-img" alt="Story 2">
+              <p class="story-username">friend_1</p>
+            </div>
+            <div class="story">
+              <img src="./83.jpg" class="rounded-circle story-img" alt="Story 3">
+              <p class="story-username">friend_2</p>
+            </div>
+            <div class="story">
+              <img src="./84.jpg" class="rounded-circle story-img" alt="Story 4">
+              <p class="story-username">friend_3</p>
+            </div>
+            <div class="story">
+              <img src="./85.jpg" class="rounded-circle story-img" alt="Story 5">
+              <p class="story-username">friend_4</p>
+            </div>
+            <div class="story">
+              <img src="./81.jpeg" class="rounded-circle story-img" alt="Story 6">
+              <p class="story-username">friend_5</p>
+            </div>
+            <div class="story">
+              <img src="./82.png" class="rounded-circle story-img" alt="Story 7">
+              <p class="story-username">friend_6</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Posts (Scrollable vertically) -->
+        <div class="posts-section">
+          <div class="card mb-4">
+            <img src="./d1.jpeg" class="card-img-top" alt="Post Image">
+            <div class="card-body">
+              <h5 class="card-title">filmnthusiast</h5>
+              <p class="card-text">Interstellar was released 8 years ago (or 1 hour 36 minutes on Miller's planet) 🌍🚀</p>
+              <p class="card-text"><small class="text-muted">Liked by justinspod3 and 215,266 others</small></p>
+            </div>
+          </div>
+          <div class="card mb-4">
+            <img src="./d2.jpeg" class="card-img-top" alt="Post Image">
+            <div class="card-body">
+              <h5 class="card-title">naturelover</h5>
+              <p class="card-text">The beauty of nature is beyond words 🌲🌿</p>
+              <p class="card-text"><small class="text-muted">Liked by adventurer1 and 54,213 others</small></p>
+            </div>
+          </div>
+          <div class="card mb-4">
+            <img src="./d3.jpeg" class="card-img-top" alt="Post Image">
+            <div class="card-body">
+              <h5 class="card-title">travellerlife</h5>
+              <p class="card-text">Exploring the world, one step at a time 🌍✈️</p>
+              <p class="card-text"><small class="text-muted">Liked by wanderlust and 109,564 others</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Suggestions -->
+      <div class="col-md-3 offset-md-1">
+        <div class="card">
+          <div class="card-header">
+            Suggestions For You
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">imvisiblecanyouseeme <button class="btn btn-sm btn-primary float-end">Follow</button></li>
+            <li class="list-group-item">wallerx_04 <button class="btn btn-sm btn-primary float-end">Follow</button></li>
+            <li class="list-group-item">bwarrenbrewskis <button class="btn btn-sm btn-primary float-end">Follow</button></li>
+            <li class="list-group-item">rinkdrop <button class="btn btn-sm btn-primary float-end">Follow</button></li>
+            <li class="list-group-item">thesaltie1 <button class="btn btn-sm btn-primary float-end">Follow</button></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="scripts.js"></script>
+</body>
+</html>

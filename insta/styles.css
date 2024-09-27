@@ -1,0 +1,100 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fafafa;
+  }
+  
+  .navbar {
+    background-color: #ffffff;
+    border-bottom: 1px solid #dbdbdb;
+  }
+  
+  .navbar .navbar-brand {
+    font-family: 'Lobster', cursive;
+    font-size: 24px;
+  }
+  
+  /* Sidebar Styling (Fixed) */
+  #sidebar {
+    position: fixed;
+    top: 60px; /* adjust based on navbar height */
+    height: calc(100vh - 60px);
+    width: 16%;
+    background-color: #fff;
+    border-right: 1px solid #dbdbdb;
+  }
+  
+  .list-group-item {
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+  
+  .list-group-item i {
+    font-size: 20px;
+    margin-right: 15px;
+  }
+  
+  .list-group-item:hover {
+    background-color: #f5f5f5;
+  }
+  
+  /* Feed and Posts Section */
+  #feed {
+    margin-left: 16%;
+    padding-top: 60px;
+  }
+  
+  /* Scrollable Stories Section */
+  .stories-section {
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .stories-section .d-flex {
+    overflow-x: auto;
+  }
+  
+  .story {
+    text-align: center;
+    margin-right: 10px;
+  }
+  
+  .story img {
+    width: 80px;
+    height: 80px;
+    border: 2px solid #f0932b;
+    padding: 3px;
+    margin-bottom: 5px;
+  }
+  
+  .story-username {
+    font-size: 12px;
+  }
+  
+  /* Scrollable Posts Section */
+  .posts-section {
+    overflow-y: auto;
+    height: auto;
+    padding: 10px;
+  }
+  
+  .posts-section .card {
+    margin-bottom: 20px;
+  }
+  
+  .card img {
+    border-radius: 10px;
+  }
+  
+  .card-body h5 {
+    font-weight: bold;
+  }
+  
+  .card-text {
+    font-size: 14px;
+  }
+  
